@@ -3,17 +3,19 @@ import { Noto_Sans_KR, Noto_Serif_KR } from "next/font/google";
 import "./globals.css";
 
 const bodyFont = Noto_Sans_KR({
-  subsets: ["korean", "latin"],
+  subsets: ["latin"],
   weight: ["300", "500", "700"],
   variable: "--font-body",
   display: "swap",
+  fallback: ["Apple SD Gothic Neo", "Malgun Gothic", "sans-serif"],
 });
 
 const displayFont = Noto_Serif_KR({
-  subsets: ["korean", "latin"],
+  subsets: ["latin"],
   weight: ["400", "700"],
   variable: "--font-display",
   display: "swap",
+  fallback: ["Apple SD Gothic Neo", "Malgun Gothic", "serif"],
 });
 
 export const metadata: Metadata = {
