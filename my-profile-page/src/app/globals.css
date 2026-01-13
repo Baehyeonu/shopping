@@ -32,6 +32,11 @@ a {
   color: inherit;
 }
 
+.grid-dots {
+  background-image: radial-gradient(rgba(31, 26, 20, 0.08) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
 @keyframes fade-in {
   from {
     opacity: 0;
@@ -59,5 +64,38 @@ a {
   }
   50% {
     transform: translateY(-12px);
+  }
+}
+
+@keyframes drift {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(-14px, -18px);
+  }
+}
+
+@keyframes pulse-glow {
+  0%,
+  100% {
+    opacity: 0.35;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.6;
+    transform: scale(1.08);
+  }
+}
+
+@keyframes fade-in-right {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
