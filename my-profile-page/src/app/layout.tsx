@@ -1,15 +1,15 @@
 import type { Metadata } from "next";
-import { Gothic_A1, Gowun_Batang } from "next/font/google";
+import { Noto_Sans_KR, Noto_Serif_KR } from "next/font/google";
 import "./globals.css";
 
-const bodyFont = Gothic_A1({
+const bodyFont = Noto_Sans_KR({
   subsets: ["korean", "latin"],
   weight: ["300", "500", "700"],
   variable: "--font-body",
   display: "swap",
 });
 
-const displayFont = Gowun_Batang({
+const displayFont = Noto_Serif_KR({
   subsets: ["korean", "latin"],
   weight: ["400", "700"],
   variable: "--font-display",
